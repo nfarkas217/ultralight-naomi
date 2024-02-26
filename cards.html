@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Cards CSS</title>
+    <meta charset="utf-8" />
+    <style>
+      /* To come */
+      img {
+        max-width: 100%;
+      }
+      html,
+      body {
+        height: 100vh;
+      }
+      body {
+        margin: 0;
+        font-family: cursive;
+        font-size: 2em;
+        letter-spacing: 0.05em;
+      }
+      section {
+        height: 100vh;
+        background: black;
+        /*
+                   vertical centering with flexbox:
+                   https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+                */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        width: 450px;
+        height: 300px;
+        background: white;
+        border-radius: 8px;
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        letter-spacing: 0.05em;
+        /*
+                   vertical centering with flexbox:
+                   https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+                */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .logo {
+        width: 150px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        z-index: 1;
+        mix-blend-mode: multiply;
+      }
+      .name {
+        z-index: 2;
+      }
+      .title {
+        font-size: 12px;
+        text-align: left;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        z-index: 3;
+      }
+      .line {
+        background: aliceblue;
+        height: 100%;
+        width: 20px;
+        position: absolute;
+        left: 60px;
+      }
+      .hline {
+        background: aliceblue;
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        bottom: 80px;
+      }
+      .hline2 {
+        background: lightskyblue;
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        bottom: 70px;
+        opacity: .25;
+      }
+      #two {
+        background: thistle;
+
+      }
+      #two .card{
+        font-family: fantasy;
+      }
+      #two .bottom{
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        z-index: 1;
+        mix-blend-mode: multiply;
+        opacity: .5;
+      }
+      #two .name{
+        position: absolute;
+        top: 50px;
+      }
+
+      #two .hline{
+        background: pink;
+        height: 20px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        opacity: 0.5;
+
+      }
+      #two .hline3{
+        background: pink;
+        height: 50px;
+        width: 250px;
+        position: absolute;
+        top: 40px;
+        opacity: 0.5; 
+      }
+      #two .title {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: x-small;
+        position: absolute;
+        top: 90px;
+        right: 140px;
+        z-index: 3;
+      }
+
+      #two .topleft{
+        width: 50%;
+        transform: scaleY(-1);
+        position: absolute;
+        left: 0px;
+        top: -20px;
+        z-index: 0;
+        mix-blend-mode: multiply;
+        opacity: .3;
+      }
+      #two .topright{
+        width: 75%;
+        transform: rotateY(180deg);
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        z-index: 0;
+        mix-blend-mode: multiply;
+        opacity: .25;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <section id = "one">
+      <div class="card">
+        <div class="name">Naomi Farkas</div>
+        <div class="logo">
+          <img src="images/ultralight_kite.png" />
+        </div>
+        <div class="title">
+          VIS 208 <br />
+          Graphic Design: Link <br />
+          <i> Ultralight </i>
+        </div>
+        <div class="line"></div>
+        <div class="hline"></div>
+        <div class="hline2"></div>
+      </div>
+    </section>
+  </body>
+
+  <body>
+    <section id="two">
+      <div class="card">
+        <div class="name">Naomi Farkas</div>
+        <div class="bottom">
+            <img src="images/flowers.jpeg" />
+        </div>
+        <div class="hline"></div>
+        <div class="hline3"></div>
+        <div class="title">
+            nfarkas@princeton.edu <br />
+            <i> Ultralight </i>
+        </div>
+        <div class="topleft">
+            <img src="images/flowers2.jpeg" />
+        </div>
+        <div class="topright">
+            <img src="images/flowers2.jpeg" />
+        </div>
+    </section>
+  </body>
+</html>
