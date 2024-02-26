@@ -157,6 +157,63 @@
         opacity: .25;
       }
 
+      #three {
+        background: midnightblue;
+        opacity: 86%;
+      }
+
+      #three .card{
+        color: midnightblue;
+        letter-spacing: 0.5em;
+        font-family: monospace;
+        font-size: small;
+      }
+
+      #three .bg{
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        opacity: 50%;
+        left: 0px;
+        top:0px;
+        z-index: 0;
+      }
+
+      #three .upright {
+        font-size: 10px;
+        text-align: left;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        z-index: 3;
+      }
+
+      #three .upleft {
+        font-size: 10px;
+        text-align: left;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        z-index: 3;
+      }
+
+      #three .downleft {
+        font-size: 10px;
+        text-align: left;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        z-index: 3;
+      }
+
+      #three .downright {
+        font-size: 10px;
+        text-align: left;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        z-index: 3;
+      }
     </style>
   </head>
 
@@ -198,6 +255,30 @@
         <div class="topright">
             <img src="images/flowers2.jpeg" />
         </div>
+    </section>
+  </body>
+
+  <body>
+    <section id="three">
+      <div class="card">
+        <div class="name">
+          <b><i>Naomi Farkas</i></b>
+        </div>
+        <div class="upleft">
+          Princeton University <br />
+        </div>
+        <div class="upright">
+          2024 <br />
+        </div>
+        <div class="downleft">
+          nfarkas@princeton.edu <br />
+        </div>
+        <div class="downright">
+          Ultralight <br />
+        </div>
+        <div class="bg">
+          <img src="images/cool_bg.jpeg" />
+      </div>
     </section>
   </body>
 </html>
