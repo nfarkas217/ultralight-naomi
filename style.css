@@ -1,0 +1,167 @@
+body {
+  background-color: rgb(220, 198, 219);
+}
+
+.nav-container a {
+  padding: 20px;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 150px;
+  margin-left: 60px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.box {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+  height: 200px;
+  background-color: #b795cd;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.box:hover {
+  background-color: #911d48;
+}
+.box1:hover {
+  background-color: #ba692f;
+}
+.box2:hover {
+  background-color: #c8c838;
+}
+.box3:hover {
+  background-color: #41ac3f;
+}
+.box4:hover {
+  background-color: #302ea3;
+}
+.box5:hover {
+  background-color: #8828a8;
+}
+
+.box1 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+  height: 200px;
+  background-color: #b795cd;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.box2 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+  height: 200px;
+  background-color: #b795cd;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.box3 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+  height: 200px;
+  background-color: #b795cd;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.box4 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+  height: 200px;
+  background-color: #b795cd;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.box5 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+  height: 200px;
+  background-color: #b795cd;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.nav-container {
+  background-color: #b795cd;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: x-large;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 50px;
+  font-weight: 500;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  padding: 14px 16px;
+  overflow: hidden;
+}
+.nav-container a:hover {
+  color: aliceblue;
+}
+
+.current {
+  font-weight: 600;
+}
+.Made {
+  color: #5d1461;
+}
+.Not-Made {
+  color: #291970;
+}
+#made .Made {
+  color: #5d1461;
+}
+#made .Not-Made {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+#not-made .Not-Made {
+  color: #291970;
+}
+#not-made .Made {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
