@@ -14,9 +14,13 @@
       span {
         color: white;
       }
-      @media screen and (max-width: 800px) {
+
+      @media screen and (max-width: 1000px) {
         span {
           color: #eec0e1;
+        }
+        .f {
+          color: black;
         }
         p {
           font-family: cursive;
@@ -26,14 +30,43 @@
           color: black;
         }
         img {
-          max-width: 50%;
-          max-height: 50%;
+          max-width: 30%;
+          max-height: 30%;
           opacity: 80%;
           filter: invert(90%) sepia(83%) saturate(1240%) hue-rotate(283deg)
             brightness(118%) contrast(87%);
         }
         body {
           background-color: #eec0e1;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        span {
+          color: #d2e1ef;
+        }
+        p {
+          font-family: cursive;
+          color: d2e1ef;
+        }
+        b {
+          color: black;
+        }
+        img {
+          max-width: 20%;
+          max-height: 20%;
+          opacity: 80%;
+          filter: invert(100%) sepia(21%) saturate(5147%) hue-rotate(175deg)
+            brightness(101%) contrast(88%);
+        }
+        body {
+          background-color: #d2e1ef;
+        }
+        .s {
+          color: black;
+        }
+        .f {
+          color: #d2e1ef;
         }
       }
     </style>
@@ -44,41 +77,48 @@
     </p>
     <p>
       <span> Reminders of </span>
-      days
+      <span class="f">days</span>
       <span> in the past– lights that </span>
-      haphazardly
-      <span>criss cross around the door, occasionally </span>
-      escaping
+      <span class="f">haphazardly</span>
+      <span
+        >criss cross around the door,
+        <span class="s">occasionally</span>
+      </span>
+      <span class="f">escaping</span>
       <span
         >the bonds of tape that constrain them. They’re a golden yellow at
       </span>
-      night
+      <span class="f">night</span>
       <span
         >but with the sun coming through the wall-length windows they’re reduced
         to copper wire. Paper cranes hang from the ceiling, multi-colored and
-        multi-patterned, flying around in a circle all following one another. I
+        multi-patterned, flying around in a circle all following one another.
+        <span class="s">I </span>
         sit on a wooden bench--
       </span>
-      I imagine
+      <span class="f">I imagine</span>
       <span>
         it oak– which hasn’t quite lost its shine but still boldly shows the
         signs of
       </span>
-      strain
+      <span class="f">strain</span>
       <span> – of ours </span>
-      released
+      <span class="f">released</span>
       <span>
         . Silverware clinks in bowls, the bowls rattle on the countertops, the
         sink turns on
       </span>
-      like a sudden rainstorm, lulling
+      <span class="f">like a sudden rainstorm, lulling</span>
       <span> the </span>
-      sounds
+      <span class="f">sounds</span>
       <span> of people </span>
-      into
-      <span> sounds of the things of people. I find comforn in the </span>
-      silence
-      <span> of knowing I'm not alone. </span>
+      <span class="f">into</span>
+      <span>
+        sounds of the things of people. I <span class="s">feel </span>comfort in
+        the
+      </span>
+      <span class="f">silence</span>
+      <span> of knowing I'm not <span class="s">alone.</span> </span>
     </p>
     <img src="images/flower_black_bg.avif" alt="flower" />
   </body>
