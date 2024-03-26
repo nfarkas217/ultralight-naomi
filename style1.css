@@ -24,6 +24,18 @@ a {
   gap: 20px;
 }
 
+body[data-status="morning"] #c4 {
+  opacity: 0;
+}
+body[data-status="afternoon"] #c3 {
+  opacity: 0;
+}
+body[data-status="evening"] #c2 {
+  opacity: 0;
+}
+body[data-status="afternoon"] #c1 {
+  opacity: 0;
+}
 .box {
   display: flex;
   flex-flow: row wrap;
@@ -72,6 +84,7 @@ a {
   border: 1px solid black;
   flex-direction: column;
 }
+
 .box3 {
   display: flex;
   flex-flow: row wrap;
