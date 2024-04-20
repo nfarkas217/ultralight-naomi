@@ -15,6 +15,95 @@ body {
   background-attachment: fixed;
 }
 
+.crane1 {
+  position: absolute;
+  left: 28px;
+  top: 780px;
+  width: 70px;
+  height: 70px;
+  rotate: 20deg;
+}
+
+.crane2 {
+  position: absolute;
+  left: 120px;
+  top: 740px;
+  width: 60px;
+  height: 70px;
+  rotate: 0deg;
+  transform: scaleX(-1);
+}
+
+.crane3 {
+  position: absolute;
+  left: 150px;
+  top: 840px;
+  width: 70px;
+  height: 70px;
+  rotate: -22deg;
+  transform: scaleX(1);
+}
+
+.crane4 {
+  position: absolute;
+  left: 230px;
+  top: 750px;
+  width: 60px;
+  height: 70px;
+  rotate: 12deg;
+  transform: scaleX(-1);
+}
+
+.crane5 {
+  position: absolute;
+  left: 290px;
+  top: 830px;
+  width: 70px;
+  height: 70px;
+  rotate: 12deg;
+  transform: scaleX(1);
+}
+
+.crane6 {
+  position: relative;
+  right: 0px;
+  top: 10px;
+  width: 100px;
+  height: 100px;
+  rotate: 3deg;
+  transform: scaleX(1);
+}
+
+.crane7 {
+  position: relative;
+  right: 33px;
+  top: 95px;
+  width: 94px;
+  height: 95px;
+  rotate: 33deg;
+  transform: scaleX(-1);
+}
+
+.crane8 {
+  position: relative;
+  right: 40px;
+  top: 30px;
+  width: 88px;
+  height: 89px;
+  rotate: 22deg;
+  transform: scaleX(1);
+}
+
+.crane9 {
+  position: relative;
+  right: 40px;
+  top: 60px;
+  width: 100px;
+  height: 100px;
+  rotate: -5deg;
+  transform: scaleX(-1);
+}
+
 .nav-container a {
   padding: 20px;
   color: black;
@@ -22,7 +111,18 @@ body {
 a {
   text-decoration: none;
   color: rgb(85, 49, 20);
+  display: block;
 }
+
+.link1 {
+  position: relative;
+  left: 0;
+  top: 50px;
+  width: 90px;
+  height: 100px;
+  rotate: 20deg;
+}
+
 p {
   color: beige;
 }
