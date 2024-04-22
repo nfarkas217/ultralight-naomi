@@ -56,7 +56,7 @@ body {
 
 .crane5 {
   position: absolute;
-  left: 290px;
+  left: 285px;
   top: 830px;
   width: 70px;
   height: 70px;
@@ -65,41 +65,41 @@ body {
 }
 
 .crane6 {
-  position: relative;
-  right: 0px;
-  top: 10px;
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  left: 30px;
+  top: 980px;
+  width: 70px;
+  height: 80px;
   rotate: 3deg;
   transform: scaleX(1);
 }
 
 .crane7 {
-  position: relative;
-  right: 33px;
-  top: 95px;
-  width: 94px;
-  height: 95px;
+  position: absolute;
+  left: 90px;
+  top: 1070px;
+  width: 70px;
+  height: 70px;
   rotate: 33deg;
   transform: scaleX(-1);
 }
 
 .crane8 {
-  position: relative;
-  right: 40px;
-  top: 30px;
-  width: 88px;
-  height: 89px;
+  position: absolute;
+  left: 180px;
+  top: 995px;
+  width: 70px;
+  height: 70px;
   rotate: 22deg;
   transform: scaleX(1);
 }
 
 .crane9 {
-  position: relative;
-  right: 40px;
-  top: 60px;
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  left: 275px;
+  top: 1030px;
+  width: 70px;
+  height: 70px;
   rotate: -5deg;
   transform: scaleX(-1);
 }
@@ -168,6 +168,22 @@ body[data-status="evening"] #c {
     rgba(149, 72, 52, 1) 94%
   );
 }
+body[data-status="evening"] {
+  --s: 50px;
+  --c: #dbcaa0;
+  --_s: calc(2 * var(--s)) calc(2 * var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #85695900 66%, #b49b69 68% 70%, #87563500 72%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+}
+
 body[data-status="night"] #c {
   background: rgb(34, 42, 65);
   background: linear-gradient(
@@ -176,6 +192,24 @@ body[data-status="night"] #c {
     rgb(19, 13, 49) 20%,
     rgb(30, 14, 10) 94%
   );
+  z-index: 3;
+}
+
+body[data-status="night"] {
+  --s: 50px;
+  --c: #dbcaa0;
+  --_s: calc(2 * var(--s)) calc(2 * var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #85695900 66%, #b49b69 68% 70%, #87563500 72%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+  z-index: 0;
 }
 
 body[data-status="night"] #sun_moon {
@@ -209,6 +243,10 @@ body[data-status="evening"] #sun_moon {
   justify-content: center;
   border: 5px solid #4e422c;
   flex-direction: column;
+  filter: blur(0px) !important;
+  backdrop-filter: blur(10px);
+  backdrop-filter: brightness(60%);
+  backdrop-filter: invert(70%);
 }
 
 .dot {
